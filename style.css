@@ -2,6 +2,9 @@
 
 /* ======================== CSS Rule #1 */
 html {
+  
+  background-image: url(https://preview.redd.it/i-finally-found-the-main-menu-bg-in-the-game-files-v0-yoks7mui2h3g1.png?width=1080&crop=smart&auto=webp&s=d85075c0edc187e2fd2cad1189acfc8c28c39e41); 
+  background-size: cover;
   background-color: white;
   padding-left: 20px;
 }
@@ -10,3 +13,11 @@ html {
 h1 {
   font-family: "Poetsen One", sans-serif;
 }
+
+
+.border {
+        width: 300px; 
+        border: 5px, solid;
+        border-color: rgb(104, 60, 30);
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        margin: 10px;}
