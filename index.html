@@ -26,45 +26,60 @@ Select ONE Additional
 <center>
  
     
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
+    <button id="mem1-button">Character #1</button>
+    <button id="mem2-button">Character #2</button>
+    <button id="mem3-button">Character #3</button>
     <h1>My top 3 characters <span>from dispatch</span></h1>
     <ol>
       <li>
         <h3 id="mem1">Character #1</h3>
         <p>More about this memory.</p>
+        <img class="Robert border" src="https://i.redd.it/ub5kpmollgyf1.jpeg", width="500">
       </li>
 
       <li>
         <h3 id="mem2">Character #2</h3>
         <p>More about this memory.</p>
+        <img class="Flambae border" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLzlicniGI3Bx4OESzM_R3x2Uz6O7z2VunDA&s", width="500">
       </li>
 
       <li>
         <h3 id="mem3">Character #3</h3>
         <p>More about this memory</p>
-        <img class="border" src="https://f2.toyhou.se/file/f2-toyhou-se/images/101868895_HIUjtyzhcNryasO.jpg" alt="3artho" width="500">
+        <img class="Toxic border" src="https://static.wikia.nocookie.net/dispatch/images/d/d8/Toxic_%28normal%29.jpg/revision/latest/scale-to-width-down/268?cb=20251103213724" alt="toxic human form" width="500">
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
+      $(".Robert").hide();
+      $(".Flambae").hide();
+      $(".Toxic").hide();
+
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
+        $(".Flambae").hide(400);
+        $(".Robert").show(400);
+        $(".Toxic").hide(400);
       });
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
+        $(".Flambae").show(400);
+        $(".Robert").hide(400);
+        $(".Toxic").hide(400);
       });
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
         $("#mem3").text("Coding Parties! 🎉");
+        $(".Toxic").show(400);
+        $(".Robert").hide(400);
+        $(".Flambae").hide(400);
        
       });
 
